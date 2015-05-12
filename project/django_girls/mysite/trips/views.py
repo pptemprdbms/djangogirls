@@ -6,5 +6,5 @@ def home(request):
     # get all the posts
     post_list = Post.objects.all()
     return render(request,
-                  'home.html',
+                  'templates/home.html',
                   {'post_list': post_list})
